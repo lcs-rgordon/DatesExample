@@ -8,19 +8,25 @@
 
 /* Begin PBXBuildFile section */
 		814F2E102C19F0B90052A922 /* DatesExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E0F2C19F0B90052A922 /* DatesExampleApp.swift */; };
-		814F2E122C19F0B90052A922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E112C19F0B90052A922 /* ContentView.swift */; };
 		814F2E142C19F0BB0052A922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814F2E132C19F0BB0052A922 /* Assets.xcassets */; };
 		814F2E172C19F0BB0052A922 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814F2E162C19F0BB0052A922 /* Preview Assets.xcassets */; };
 		814F2E1F2C19F0D20052A922 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E1E2C19F0D20052A922 /* Supabase.swift */; };
+		814F2E222C1A52190052A922 /* DatesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E212C1A52190052A922 /* DatesListView.swift */; };
+		814F2E282C1A528B0052A922 /* Auth in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E272C1A528B0052A922 /* Auth */; };
+		814F2E2A2C1A528B0052A922 /* Functions in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E292C1A528B0052A922 /* Functions */; };
+		814F2E2C2C1A528B0052A922 /* PostgREST in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E2B2C1A528B0052A922 /* PostgREST */; };
+		814F2E2E2C1A528B0052A922 /* Realtime in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E2D2C1A528B0052A922 /* Realtime */; };
+		814F2E302C1A528B0052A922 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E2F2C1A528B0052A922 /* Storage */; };
+		814F2E322C1A528B0052A922 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E312C1A528B0052A922 /* Supabase */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		814F2E0C2C19F0B90052A922 /* DatesExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatesExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		814F2E0F2C19F0B90052A922 /* DatesExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesExampleApp.swift; sourceTree = "<group>"; };
-		814F2E112C19F0B90052A922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		814F2E132C19F0BB0052A922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		814F2E162C19F0BB0052A922 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		814F2E1E2C19F0D20052A922 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
+		814F2E212C1A52190052A922 /* DatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +34,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814F2E2C2C1A528B0052A922 /* PostgREST in Frameworks */,
+				814F2E2A2C1A528B0052A922 /* Functions in Frameworks */,
+				814F2E322C1A528B0052A922 /* Supabase in Frameworks */,
+				814F2E282C1A528B0052A922 /* Auth in Frameworks */,
+				814F2E302C1A528B0052A922 /* Storage in Frameworks */,
+				814F2E2E2C1A528B0052A922 /* Realtime in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +51,7 @@
 			children = (
 				814F2E0E2C19F0B90052A922 /* DatesExample */,
 				814F2E0D2C19F0B90052A922 /* Products */,
+				814F2E262C1A528B0052A922 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,8 +67,10 @@
 			isa = PBXGroup;
 			children = (
 				814F2E0F2C19F0B90052A922 /* DatesExampleApp.swift */,
+				814F2E242C1A52270052A922 /* Model */,
+				814F2E202C19F1400052A922 /* Views */,
+				814F2E232C1A521C0052A922 /* ViewModels */,
 				814F2E1D2C19F0C70052A922 /* Helpers */,
-				814F2E112C19F0B90052A922 /* ContentView.swift */,
 				814F2E132C19F0BB0052A922 /* Assets.xcassets */,
 				814F2E152C19F0BB0052A922 /* Preview Content */,
 			);
@@ -78,6 +93,35 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		814F2E202C19F1400052A922 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				814F2E212C1A52190052A922 /* DatesListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		814F2E232C1A521C0052A922 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		814F2E242C1A52270052A922 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		814F2E262C1A528B0052A922 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -94,6 +138,14 @@
 			dependencies = (
 			);
 			name = DatesExample;
+			packageProductDependencies = (
+				814F2E272C1A528B0052A922 /* Auth */,
+				814F2E292C1A528B0052A922 /* Functions */,
+				814F2E2B2C1A528B0052A922 /* PostgREST */,
+				814F2E2D2C1A528B0052A922 /* Realtime */,
+				814F2E2F2C1A528B0052A922 /* Storage */,
+				814F2E312C1A528B0052A922 /* Supabase */,
+			);
 			productName = DatesExample;
 			productReference = 814F2E0C2C19F0B90052A922 /* DatesExample.app */;
 			productType = "com.apple.product-type.application";
@@ -122,6 +174,9 @@
 				Base,
 			);
 			mainGroup = 814F2E032C19F0B90052A922;
+			packageReferences = (
+				814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */,
+			);
 			productRefGroup = 814F2E0D2C19F0B90052A922 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -148,9 +203,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				814F2E122C19F0B90052A922 /* ContentView.swift in Sources */,
 				814F2E1F2C19F0D20052A922 /* Supabase.swift in Sources */,
 				814F2E102C19F0B90052A922 /* DatesExampleApp.swift in Sources */,
+				814F2E222C1A52190052A922 /* DatesListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +411,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/supabase-community/supabase-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.5.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		814F2E272C1A528B0052A922 /* Auth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Auth;
+		};
+		814F2E292C1A528B0052A922 /* Functions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Functions;
+		};
+		814F2E2B2C1A528B0052A922 /* PostgREST */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = PostgREST;
+		};
+		814F2E2D2C1A528B0052A922 /* Realtime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Realtime;
+		};
+		814F2E2F2C1A528B0052A922 /* Storage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Storage;
+		};
+		814F2E312C1A528B0052A922 /* Supabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 814F2E252C1A52810052A922 /* XCRemoteSwiftPackageReference "supabase-swift" */;
+			productName = Supabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 814F2E042C19F0B90052A922 /* Project object */;
 }

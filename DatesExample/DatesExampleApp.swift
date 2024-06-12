@@ -11,7 +11,7 @@ import SwiftUI
 struct DatesExampleApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            DatesListView()
         }
     }
 }
