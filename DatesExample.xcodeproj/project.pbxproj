@@ -11,6 +11,7 @@
 		814F2E122C19F0B90052A922 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E112C19F0B90052A922 /* ContentView.swift */; };
 		814F2E142C19F0BB0052A922 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814F2E132C19F0BB0052A922 /* Assets.xcassets */; };
 		814F2E172C19F0BB0052A922 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 814F2E162C19F0BB0052A922 /* Preview Assets.xcassets */; };
+		814F2E1F2C19F0D20052A922 /* Supabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E1E2C19F0D20052A922 /* Supabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		814F2E112C19F0B90052A922 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		814F2E132C19F0BB0052A922 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		814F2E162C19F0BB0052A922 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		814F2E1E2C19F0D20052A922 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXGroup;
 			children = (
 				814F2E0F2C19F0B90052A922 /* DatesExampleApp.swift */,
+				814F2E1D2C19F0C70052A922 /* Helpers */,
 				814F2E112C19F0B90052A922 /* ContentView.swift */,
 				814F2E132C19F0BB0052A922 /* Assets.xcassets */,
 				814F2E152C19F0BB0052A922 /* Preview Content */,
@@ -65,6 +68,14 @@
 				814F2E162C19F0BB0052A922 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		814F2E1D2C19F0C70052A922 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				814F2E1E2C19F0D20052A922 /* Supabase.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				814F2E122C19F0B90052A922 /* ContentView.swift in Sources */,
+				814F2E1F2C19F0D20052A922 /* Supabase.swift in Sources */,
 				814F2E102C19F0B90052A922 /* DatesExampleApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
