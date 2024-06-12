@@ -31,13 +31,11 @@ struct DatesListView: View {
                         Spacer()
                         
                         Button {
-                            // Add a new person and a date they selected
-                            let newPerson = Person(
+                            // Use the view model to add the person to the database
+                            viewModel.addPerson(
                                 firstName: firstName,
                                 providedDate: providedDate
                             )
-                            // TODO: Make this work again with the database
-                            //people.insert(newPerson, at: 0) // Add new person at top of list
                         } label: {
                             Text("Add")
                         }
