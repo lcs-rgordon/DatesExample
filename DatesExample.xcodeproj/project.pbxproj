@@ -19,6 +19,7 @@
 		814F2E302C1A528B0052A922 /* Storage in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E2F2C1A528B0052A922 /* Storage */; };
 		814F2E322C1A528B0052A922 /* Supabase in Frameworks */ = {isa = PBXBuildFile; productRef = 814F2E312C1A528B0052A922 /* Supabase */; };
 		814F2E342C1A54EF0052A922 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E332C1A54EF0052A922 /* Person.swift */; };
+		814F2E362C1A571D0052A922 /* DateListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 814F2E352C1A571D0052A922 /* DateListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		814F2E1E2C19F0D20052A922 /* Supabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Supabase.swift; sourceTree = "<group>"; };
 		814F2E212C1A52190052A922 /* DatesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatesListView.swift; sourceTree = "<group>"; };
 		814F2E332C1A54EF0052A922 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		814F2E352C1A571D0052A922 /* DateListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 		814F2E232C1A521C0052A922 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				814F2E352C1A571D0052A922 /* DateListViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -206,6 +209,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				814F2E362C1A571D0052A922 /* DateListViewModel.swift in Sources */,
 				814F2E1F2C19F0D20052A922 /* Supabase.swift in Sources */,
 				814F2E102C19F0B90052A922 /* DatesExampleApp.swift in Sources */,
 				814F2E342C1A54EF0052A922 /* Person.swift in Sources */,

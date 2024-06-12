@@ -15,8 +15,8 @@ struct DatesListView: View {
     @State private var firstName: String = ""
     @State private var providedDate: Date = Date()
     
-    // Tracks a list of names provided by the user, along with a date they picked
-    @State private var people: [Person] = examplePeople
+    // Access the view model
+    @State private var viewModel = DateListViewModel()
     
     // MARK: Computed properties
     var body: some View {
@@ -36,7 +36,8 @@ struct DatesListView: View {
                                 firstName: firstName,
                                 providedDate: providedDate
                             )
-                            people.insert(newPerson, at: 0) // Add new person at top of list
+                            // TODO: Make this work again with the database
+                            //people.insert(newPerson, at: 0) // Add new person at top of list
                         } label: {
                             Text("Add")
                         }
@@ -46,7 +47,7 @@ struct DatesListView: View {
                 }
                 .padding()
                 
-                List(people) { currentPerson in
+                List(viewModel.people) { currentPerson in
                     VStack(alignment: .leading) {
                         Text(currentPerson.firstName)
                             .bold()
