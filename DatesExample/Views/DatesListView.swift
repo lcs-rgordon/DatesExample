@@ -10,7 +10,7 @@ import SwiftUI
 struct DatesListView: View {
     
     // MARK: Stored properties
-    @State private var name: String = ""
+    @State private var firstName: String = ""
     @State private var providedDate: Date = Date()
     
     // MARK: Computed properties
@@ -19,7 +19,7 @@ struct DatesListView: View {
             
             VStack {
                 VStack {
-                    TextField("What's your name?", text: $name)
+                    TextField("What's your name?", text: $firstName)
                     DatePicker("Pick a date", selection: $providedDate)
                     
                     HStack {
