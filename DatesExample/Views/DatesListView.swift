@@ -8,8 +8,50 @@
 import SwiftUI
 
 struct DatesListView: View {
+    
+    // MARK: Stored properties
+    @State private var name: String = ""
+    @State private var providedDate: Date = Date()
+    
+    // MARK: Computed properties
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        NavigationStack {
+            
+            VStack {
+                VStack {
+                    TextField("What's your name?", text: $name)
+                    DatePicker("Pick a date", selection: $providedDate)
+                    
+                    HStack {
+                        Spacer()
+                        
+                        Button {
+                            // TODO: Add the date
+                        } label: {
+                            Text("Add")
+                        }
+                        .padding(.top, 10)
+                    }
+
+                }
+                .padding()
+                
+                List {
+                    VStack(alignment: .leading) {
+                        Text("Russell Gordon")
+                            .bold()
+                        Text("\(Date().formatted(date: .long, time: .standard))")
+                    }
+                    
+                    VStack(alignment: .leading) {
+                        Text("Nick Barbour")
+                            .bold()
+                        Text("\(Date().formatted(date: .long, time: .standard))")
+                    }
+                }
+            }
+            .navigationTitle("Dates Example")
+        }
     }
 }
 
