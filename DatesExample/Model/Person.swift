@@ -7,7 +7,7 @@
 
 import Foundation
 
-// Represents a person who has provided their name
+// Represents a person who has provided their name and a date
 struct Person: Identifiable, Codable {
     var id: Int?
     let firstName: String
